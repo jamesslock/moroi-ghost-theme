@@ -1,0 +1,25 @@
+{{#foreach posts}}
+<article class="post post--aside">
+  <div class="post--aside__main">
+    <header>
+      <h1 class="gamma post__title"><a href="{{url}}">{{{title}}}</a></h1>
+    </header>
+    <p>{{excerpt words="20"}}...</p>
+  </div>
+
+  <ul class="nav meta post__meta">
+    <li>
+      <div class="meta__title">Date:</div>
+      <time class="meta__data">{{date format="DD MMMM YYYY"}}</time>
+    </li>
+    {{#if tags}}
+    <li>
+      <div class="meta__title">Tags:</div>
+      <div class="meta__data">{{tags}}</div>
+    </li>
+    {{/if}}
+  </ul>
+</article>
+{{/foreach}}
+
+{{> pagination}}
