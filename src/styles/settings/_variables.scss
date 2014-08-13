@@ -1,0 +1,27 @@
+// SCSS variables
+// ---------------------------------------
+
+// Add the typefaces here. A Regular, Italic and Bold weight of a serif & Regular and Bold weight of a sans-serif are recommended to use. Keep the fallbacks if you like.
+$serif: Georgia, serif;
+$sans-serif: 'Lato', Helvetica, sans-serif;
+
+$color-primary: 			#822a2a; // Red
+$color-secondary: 			#333; // Dark Grey
+$color-tertiary: 			#ccc; // Light Grey
+
+
+$color-text: 				$color-secondary;
+$color-link: 				$color-primary;
+$color-background: 			#ffffff;
+$color-seporator: 			$color-tertiary;
+
+// Fonts, measure, leading and typefaces
+// -----------------------------------------------------------------------------
+
+// Fonts size and line height defaults for our calculations
+$base-font-size							: 1.1rem; 				// Sets the browser default size. Shouldn't need to change this.
+$base-line-height						: 1.85rem;					// Baseline grid. Set to a sensible, small size.
+
+$padding-btn: 15px 20px;
+$padding-btnLarge: 25px 25px;
+$spacing: 30px;
