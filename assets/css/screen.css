@@ -230,16 +230,16 @@ hr {
   font-variant: small-caps;
 }
 
-.newer-posts, .older-posts {
+.pagination__next, .pagination__prev {
   position: absolute;
 }
 
-.newer-posts {
-  left: 0;
+.pagination__prev {
+  right: 0;
 }
 
-.older-posts {
-  right: 0;
+.pagination__next {
+  left: 0;
 }
 
 .header {
