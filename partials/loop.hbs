@@ -12,12 +12,6 @@
       <div class="meta__title">Date:</div>
       <time class="meta__data">{{date format="DD MMMM YYYY"}}</time>
     </li>
-    {{#if tags}}
-    <li>
-      <div class="meta__title">Tags:</div>
-      <div class="meta__data">{{tags}}</div>
-    </li>
-    {{/if}}
     <li>
       <div class="meta__title">Written by:</div>
       <div class="meta__data">
@@ -26,6 +20,12 @@
         {{/author}}
       </div>
     </li>
+    {{#if tags}}
+    <li>
+      <div class="meta__title">Tags:</div>
+      <div class="meta__data">{{tags}}</div>
+    </li>
+    {{/if}}
   </ul>
 </article>
 {{/foreach}}
