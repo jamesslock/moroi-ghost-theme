@@ -52,10 +52,11 @@ body {
 }
 
 a {
-  -webkit-transition: .1s color;
-          transition: .1s color;
   color: #822a2a;
   text-decoration: none;
+}
+a:hover {
+  color: #6f2424;
 }
 
 h1, .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
@@ -377,7 +378,4 @@ time {
 .meta__data {
   display: block;
   font-size: 0.7rem;
-}
-.meta__data a {
-  color: #333333;
 }
