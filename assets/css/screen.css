@@ -252,7 +252,7 @@ hr {
   padding-bottom: 30px;
 }
 
-.posts .post:first-child .post--aside__main, .posts .post:first-child .post__meta {
+.posts .post:first-child .post--item__main, .posts .post:first-child .post__meta {
   border-top: 0;
 }
 
@@ -263,16 +263,16 @@ hr {
   max-width: 100%;
 }
 
-.post--aside {
+.post--item {
   padding-left: 330px;
   padding-bottom: 30px;
   min-height: 270px;
 }
-.post--aside p {
+.post--item p {
   margin: 0;
 }
 
-.post--aside__main {
+.post--item__main {
   border-top: 1px solid #cccccc;
   padding-top: 30px;
 }
@@ -282,7 +282,7 @@ hr {
   padding-bottom: 30px;
   margin-bottom: 0;
 }
-.post--aside .post__title {
+.post--item .post__title {
   border: 0;
   margin: 0;
   padding-bottom: 15px;
@@ -293,7 +293,7 @@ hr {
   padding: 15px 0;
   margin-bottom: 30px;
 }
-.post--aside .post__meta {
+.post--item .post__meta {
   position: absolute;
   left: 0;
   top: 0;
