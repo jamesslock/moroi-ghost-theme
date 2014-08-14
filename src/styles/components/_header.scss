@@ -1,0 +1,19 @@
+.header {
+	padding-top: $spacing;
+	margin-bottom: $spacing;
+	border-bottom: 1px solid $color-seporator;
+}
+.header__title {
+	margin-top: 0;
+}
+.header__description {
+	margin-bottom: 0;
+	padding-right: 30%;
+	padding-bottom: $spacing;
+	font-size: 1.2rem;
+}
+.header__tag {
+	margin-bottom: 0;
+	padding-right: 30%;
+	padding-bottom: $spacing;
+}
