@@ -2,21 +2,21 @@
 
 <main role="main" class="container container--small">
 
-  <article class="post">
+  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   {{#post}}
 
     <header class="post__header">
-      <h1 class="post__title">{{title}}</h1>
+      <h1 class="post__title" itemprop="name headline">{{title}}</h1>
       <ul class="nav nav--inline meta post__meta">
         <li>
           <div class="meta__title">Date:</div>
-          <time class="meta__data">{{date format="DD MMMM YYYY"}}</time>
+          <time class="meta__data" itemprop="datePublished">{{date format="DD MMMM YYYY"}}</time>
         </li>
-        <li>
+        <li itemprop="author" itemtype="http://schema.org/Person">
           <div class="meta__title">Written by:</div>
-          <div class="meta__data">
+          <div class="meta__data" itemprop="author">
             {{#author}}
-            <a href="{{url}}">{{name}}</a>
+            <a href="{{url}}" itemprop="url" rel="author">{{name}}</a>
             {{/author}}
           </div>
         </li>
@@ -29,7 +29,7 @@
       </ul>
     </header>
 
-    <section class="post__body">
+    <section class="post__body" itemprop="articleBody">
       {{content}}
     </section>
 
