@@ -1,5 +1,5 @@
 .header {
-	padding-top: $spacing;
+	padding-top: $spacing*2;
 	margin-bottom: $spacing;
 	border-bottom: 1px solid $color-seporator;
 }
@@ -13,6 +13,7 @@
 	font-size: 1.2rem;
 }
 .header__tag {
+	margin-top: 0;
 	margin-bottom: 0;
 	padding-right: 30%;
 	padding-bottom: $spacing;
