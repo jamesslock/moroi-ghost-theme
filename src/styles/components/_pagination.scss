@@ -1,0 +1,16 @@
+.pagination {
+	border-top: 1px solid $color-seporator;
+	padding: $spacing 0;
+	text-align: center;
+	position: relative;
+	font-variant: small-caps;
+}
+.newer-posts, .older-posts {
+	position: absolute;
+}
+.newer-posts {
+	left: 0;
+}
+.older-posts {
+	right: 0;
+}
