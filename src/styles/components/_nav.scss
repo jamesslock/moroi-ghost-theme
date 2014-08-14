@@ -1,0 +1,13 @@
+.nav {
+	list-style: none;
+}
+.nav--inline {
+	li {
+		display: block;
+		float: left;
+		padding-left: $spacing;
+	}
+	li:first-child {
+		padding-left: 0;
+	}
+}

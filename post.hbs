@@ -7,9 +7,26 @@
 
     <header class="post__header">
       <h1 class="post__title">{{title}}</h1>
-      <section class="post__meta">
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-      </section>
+      <ul class="nav nav--inline clearfix meta post__meta">
+        <li class="meta__date">
+          <div class="meta__title">Date:</div>
+          <time class="meta__data">{{date format="DD MMMM YYYY"}}</time>
+        </li>
+        <li class="meta__by">
+          <div class="meta__title">Written by:</div>
+          <div class="meta__data">
+            {{#author}}
+            <a href="{{url}}">{{name}}</a>
+            {{/author}}
+          </div>
+        </li>
+        {{#if tags}}
+        <li class="meta__tags">
+          <div class="meta__title">Tags:</div>
+          <div class="meta__data">{{tags}}</div>
+        </li>
+        {{/if}}
+      </ul>
     </header>
 
     <section class="post__body">
