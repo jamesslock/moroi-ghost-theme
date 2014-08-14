@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//google-analytics.com">
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>{{meta_title}}</title>
-  <meta name="description" content="{{meta_description}}" />
 
-  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-  <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+  <meta name="description" content="{{meta_description}}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{meta_title}}">
+  <meta name="twitter:description" content="{{meta_description}}">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{meta_title}}">
+  <meta property="og:description" content="{{meta_description}}">
+
+  {{> custom/meta this}}
+
+  <link href="{{asset "favicon.ico"}}" rel="shortcut icon" type="image/x-icon">
+  <link href="{{asset "apple-touch-icon.png"}}" rel="apple-touch-icon">
+  <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet'>
 
   {{ghost_head}}
 </head>
