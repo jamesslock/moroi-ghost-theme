@@ -1,0 +1,12 @@
+{{!< default}}
+
+<div class="container">
+    <header class="header">
+		<h1 class="header__title">{{@blog.title}}</h1>
+		<p class="header__description">{{@blog.description}}</p>
+	</header>
+</div>
+
+<main role="main" class="posts container">
+  {{> "loop"}}
+</main>
