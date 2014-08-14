@@ -52,3 +52,12 @@ time {
 	display: block;
 	font-size: 0.7rem;
 }
+
+.footer {
+	margin-top: $spacing;
+	border-top: 1px solid $color-seporator;
+	padding: $spacing 0;
+	font-size: 0.9rem;
+	font-variant: small-caps;
+	letter-spacing: 0.1rem;
+}
