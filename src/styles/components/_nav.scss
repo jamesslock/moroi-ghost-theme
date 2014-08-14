@@ -2,6 +2,7 @@
 	list-style: none;
 }
 .nav--inline {
+	@extend .clearfix;
 	li {
 		display: block;
 		float: left;
