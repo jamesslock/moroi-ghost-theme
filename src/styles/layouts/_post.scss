@@ -28,6 +28,7 @@
   border-bottom: 1px solid $color-seporator;
   padding-bottom: $spacing;
   margin-bottom: 0;
+  margin-top: $spacing*2;
 
   .post--item & {
     border: 0;
