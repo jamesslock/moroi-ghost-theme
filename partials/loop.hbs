@@ -4,7 +4,7 @@
     <header>
       <h1 class="gamma post__title"><a href="{{url}}">{{{title}}}</a></h1>
     </header>
-    <p>{{excerpt words="20"}}...</p>
+    <p>{{excerpt words="28"}}...</p>
   </div>
 
   <ul class="nav meta post__meta">
@@ -18,8 +18,16 @@
       <div class="meta__data">{{tags}}</div>
     </li>
     {{/if}}
+    <li>
+      <div class="meta__title">Written by:</div>
+      <div class="meta__data">
+        {{#author}}
+        <a href="{{url}}">{{name}}</a>
+        {{/author}}
+      </div>
+    </li>
   </ul>
 </article>
 {{/foreach}}
 
-{{> pagination}}
+{{pagination}}
