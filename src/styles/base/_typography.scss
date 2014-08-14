@@ -19,11 +19,10 @@ body {
  }
 
  a {
-  transition: .1s color;
   color: $color-link;
   text-decoration: none;
-  &:hover, &:active, &:focus {
-
+  &:hover {
+    color: darken($color-link, 5%);
   }
 }
 
