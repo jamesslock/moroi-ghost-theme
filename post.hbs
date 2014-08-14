@@ -8,11 +8,11 @@
     <header class="post__header">
       <h1 class="post__title">{{title}}</h1>
       <ul class="nav nav--inline meta post__meta">
-        <li class="meta__date">
+        <li>
           <div class="meta__title">Date:</div>
           <time class="meta__data">{{date format="DD MMMM YYYY"}}</time>
         </li>
-        <li class="meta__by">
+        <li>
           <div class="meta__title">Written by:</div>
           <div class="meta__data">
             {{#author}}
@@ -21,7 +21,7 @@
           </div>
         </li>
         {{#if tags}}
-        <li class="meta__tags">
+        <li>
           <div class="meta__title">Tags:</div>
           <div class="meta__data">{{tags}}</div>
         </li>
