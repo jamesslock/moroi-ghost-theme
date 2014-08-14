@@ -295,6 +295,7 @@ hr {
   border-bottom: 1px solid #cccccc;
   padding-bottom: 30px;
   margin-bottom: 0;
+  margin-top: 60px;
 }
 .post--item .post__title {
   border: 0;
