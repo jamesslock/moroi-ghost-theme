@@ -2,13 +2,13 @@
 	list-style: none;
 }
 .nav--inline {
+	margin-left: -$spacing;
 	@extend .clearfix;
 	li {
 		display: block;
-		float: left;
 		padding-left: $spacing;
-	}
-	li:first-child {
-		padding-left: 0;
+		@media only screen and (min-width : $mq-large) {
+			float: left;
+		}
 	}
 }

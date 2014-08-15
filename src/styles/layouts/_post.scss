@@ -11,9 +11,12 @@
   }
 }
 .post--item {
-  padding-left: $spacing*11;
   padding-bottom: $spacing;
-  min-height: $spacing*9;
+
+  @media only screen and (min-width : $mq-large) {
+    padding-left: $spacing*11;
+    min-height: $spacing*9;
+  }
   p {
     margin: 0;
   }
@@ -43,14 +46,16 @@
   margin-bottom: $spacing;
 
   .post--item & {
-    position: absolute;
-    left: 0;
-    top: 0;
     margin: 0;
-    padding: $spacing 0 0 0;
-    width: $spacing*9;
     border: 0;
-    border-top: 1px solid $color-seporator;
+    @media only screen and (min-width : $mq-large) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top: 1px solid $color-seporator;
+      padding: $spacing 0 0 0;
+      width: $spacing*9;
+    }
   }
 
   &.nav--inline {

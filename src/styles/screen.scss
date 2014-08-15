@@ -28,8 +28,6 @@
 }
 .container--small {
   max-width: 720px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 time {
@@ -60,4 +58,14 @@ time {
 	font-size: 0.9rem;
 	font-variant: small-caps;
 	letter-spacing: 0.1rem;
+}
+.footer__copyright {
+	@media only screen and (min-width : $mq-large) {
+		float: left;
+	}
+}
+.footer__ghost {
+	@media only screen and (min-width : $mq-large) {
+		float: right;
+	}
 }

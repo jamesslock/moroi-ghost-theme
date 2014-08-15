@@ -214,13 +214,17 @@ hr {
   list-style: none;
 }
 
+.nav--inline {
+  margin-left: -30px;
+}
 .nav--inline li {
   display: block;
-  float: left;
   padding-left: 30px;
 }
-.nav--inline li:first-child {
-  padding-left: 0;
+@media only screen and (min-width: 900px) {
+  .nav--inline li {
+    float: left;
+  }
 }
 
 .pagination {
@@ -254,9 +258,13 @@ hr {
 
 .header__description {
   margin-bottom: 0;
-  padding-right: 30%;
   padding-bottom: 30px;
   font-size: 1.2rem;
+}
+@media only screen and (min-width: 900px) {
+  .header__description {
+    padding-right: 30%;
+  }
 }
 
 .header__tag {
@@ -278,9 +286,13 @@ hr {
 }
 
 .post--item {
-  padding-left: 330px;
   padding-bottom: 30px;
-  min-height: 270px;
+}
+@media only screen and (min-width: 900px) {
+  .post--item {
+    padding-left: 330px;
+    min-height: 270px;
+  }
 }
 .post--item p {
   margin: 0;
@@ -309,14 +321,18 @@ hr {
   margin-bottom: 30px;
 }
 .post--item .post__meta {
-  position: absolute;
-  left: 0;
-  top: 0;
   margin: 0;
-  padding: 30px 0 0 0;
-  width: 270px;
   border: 0;
-  border-top: 1px solid #cccccc;
+}
+@media only screen and (min-width: 900px) {
+  .post--item .post__meta {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 1px solid #cccccc;
+    padding: 30px 0 0 0;
+    width: 270px;
+  }
 }
 .post__meta.nav--inline {
   padding: 0;
@@ -363,8 +379,6 @@ hr {
 
 .container--small {
   max-width: 720px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 time {
@@ -396,4 +410,16 @@ time {
   font-size: 0.9rem;
   font-variant: small-caps;
   letter-spacing: 0.1rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .footer__copyright {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .footer__ghost {
+    float: right;
+  }
 }
